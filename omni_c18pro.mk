@@ -14,7 +14,9 @@ PRODUCT_PACKAGES += \
 
     
 # PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/oukitel/c18pro/root,recovery/root)
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/root/*:root/*
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/root/init.recovery.mt6757.rc:root/init.recovery.mt6757.rc
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/root/sbin/permissive.sh:root/sbin/permissive.sh
+
 # Release name
 PRODUCT_RELEASE_NAME := C18_Pro
 
