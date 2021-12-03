@@ -24,11 +24,6 @@ repo init --depth=1 -u https://github.com/PitchBlackRecoveryProject/manifest_pb.
 repo sync -j$(nproc --all) --force-sync
 ```
 
-## Add these projects to .repo/manifests/twrp-extras.xml
-```xml
-<project path="TheSync/pbrp" remote="github" revision="android-10.0" />
-```
-
 ## Then to build
 ```bash
      cd <source-dir>
