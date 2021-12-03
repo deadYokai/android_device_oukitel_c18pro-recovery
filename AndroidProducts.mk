@@ -1,7 +1,7 @@
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_C18Pro.mk
+    $(LOCAL_DIR)/omni_c18pro.mk
 
 
 COMMON_LUNCH_CHOICES := \
-    omni_C18Pro-userdebug
+    omni_c18pro-userdebug

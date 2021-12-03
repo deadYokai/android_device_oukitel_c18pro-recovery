@@ -36,7 +36,7 @@ TW_DEFAULT_BRIGHTNESS := 128
 TW_THEME := portrait_hdpi
 
 
-TARGET_PREBUILT_KERNEL := device/Oukitel/C18Pro/prebuilt/Image.gz
+TARGET_PREBUILT_KERNEL := device/oukitel/c18pro/prebuilt/Image.gz
 
 
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
@@ -62,7 +62,7 @@ RECOVERY_SDCARD_ON_DATA := true
 
 
 # File Systems
-TARGET_RECOVERY_FSTAB = device/Oukitel/C18Pro/root/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB = device/oukitel/c18pro/root/etc/recovery.fstab
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_SUPPRESS_SECURE_ERASE := true
