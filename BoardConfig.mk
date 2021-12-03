@@ -66,7 +66,7 @@ RECOVERY_SDCARD_ON_DATA := true
 
 
 # File Systems
-TARGET_RECOVERY_FSTAB = device/oukitel/c18pro/root/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB = device/oukitel/c18pro/recovery.fstab
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_SUPPRESS_SECURE_ERASE := true
