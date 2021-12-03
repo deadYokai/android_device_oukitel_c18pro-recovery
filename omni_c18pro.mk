@@ -20,7 +20,7 @@ PRODUCT_RELEASE_NAME := C18_Pro
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := C18Pro
-PRODUCT_NAME := omni_C18Pro
+PRODUCT_NAME := omni_c18pro
 PRODUCT_BRAND := OUKITEL
 PRODUCT_MODEL := C18_Pro
 PRODUCT_MANUFACTURER := OUKITEL
