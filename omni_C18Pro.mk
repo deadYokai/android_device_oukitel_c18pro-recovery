@@ -1,8 +1,8 @@
 LOCAL_PATH := device/Oukitel/C18Pro
 
 # Necessary to mount a PC
-$(call inherit-product, $(SRC_TARGET_DIR)/product/embeded.mk) 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk) 
+# $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk) 
 
 # $(call inherit-product, device/Oukitel/C18_Pro.mk)
 
