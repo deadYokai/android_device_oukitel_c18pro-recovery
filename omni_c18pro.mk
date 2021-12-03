@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/oukitel/c18pro/root
 PRODUCT_RELEASE_NAME := C18_Pro
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := C18Pro
+PRODUCT_DEVICE := c18pro
 PRODUCT_NAME := omni_c18pro
 PRODUCT_BRAND := OUKITEL
 PRODUCT_MODEL := C18_Pro
