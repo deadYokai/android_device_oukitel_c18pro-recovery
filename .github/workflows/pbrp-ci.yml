@@ -46,6 +46,15 @@ jobs:
        - name: Recovery Compilation
          uses: ElytrA8/Recovery-Compiler@production
        
-       - name: Release Builds 
-         run: |
-              echo "Done."
+       - name: Upload recovery.img 
+         uses: actions/upload-artifact@v2.2.4
+         with:
+           name: recovery.img
+           path: ~/builder/out/target/product/c18pro/recovery.img
+           
+       - name: Upload PBRP.zip
+         uses: actions/upload-artifact@v2.2.4
+         with:
+           name: Zip for twrp
+           path: ~/builder/out/target/product/c18pro/PBRP-c18pro-.*\.zip
+                  
