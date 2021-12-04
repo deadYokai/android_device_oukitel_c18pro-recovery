@@ -25,7 +25,7 @@ env:
   #EXTRA_CMD: "Extra Commands Here"
 
 jobs:
-  PBRP_CI:
+  Recovery_compiling:
     if: "(! contains(toJSON(github.event.commits.*.message), '[skip-ci]'))"
     runs-on: ubuntu-20.04
 
