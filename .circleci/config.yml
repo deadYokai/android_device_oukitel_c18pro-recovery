@@ -32,6 +32,10 @@ jobs:
       - run:
           name: "Init build"
           command: "wget -O ~/build.sh https://raw.githubusercontent.com/OneGameKoTT/Recovery-Compiler/beta/build.sh && bash ~/build.sh"
+      - run:
+          name: "OnFail01"
+          command: "cd ~/builder && source build/envsetup.sh && make -j1 recoveryimage"
+          when: on_fail
       - persist_to_workspace:
           root: ~/
           paths: [builder/out/target/product/c18pro/recovery.img]
