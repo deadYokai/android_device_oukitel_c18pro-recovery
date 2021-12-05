@@ -8,16 +8,13 @@ jobs:
   build:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
-    docker:
-      - image: cimg/base:2021.11-20.04
+    machine:
+      image: ubuntu-2004:202111-01
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
-        environment:
-          TEST_BUILD: "true"
-          MANIFEST: https://github.com/PitchBlackRecoveryProject/manifest_pb -b android-10.0
-          JAVA_OPTS: "-Xmx3g"
-          JAVA_TOOL_OPTIONS: "-Xmx3g"
-          CCACHE_DISABLE: 1
+    environment:
+      TEST_BUILD: "true"
+      MANIFEST: https://github.com/PitchBlackRecoveryProject/manifest_pb -b android-10.0
 
     steps:
       - checkout
@@ -35,7 +32,7 @@ jobs:
           command: "wget -O ~/build.sh https://raw.githubusercontent.com/OneGameKoTT/Recovery-Compiler/beta/build.sh && bash ~/build.sh"
       - run:
           name: "OnFail01"
-          command: "cd ~/builder && source build/envsetup.sh && lunch omni_c18pro && mka recoveryimage"
+          command: "echo fail"
           when: on_fail
       - persist_to_workspace:
           root: ~/
