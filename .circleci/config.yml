@@ -15,6 +15,9 @@ jobs:
         environment:
           TEST_BUILD: "true"
           MANIFEST: https://github.com/PitchBlackRecoveryProject/manifest_pb -b android-10.0
+          _JAVA_OPTIONS: "-Xmx3g"
+          JAVA_TOOL_OPTIONS: "-Xmx3g"
+
     steps:
       - checkout
       - run:
