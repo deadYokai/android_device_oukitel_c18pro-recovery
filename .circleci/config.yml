@@ -34,7 +34,7 @@ jobs:
           command: "wget -O ~/build.sh https://raw.githubusercontent.com/OneGameKoTT/Recovery-Compiler/beta/build.sh && bash ~/build.sh"
       - run:
           name: "OnFail01"
-          command: "cd ~/builder && mka recoveryimage"
+          command: "cd ~/builder && source build/envsetup.sh && lunch omni_c18pro && mka recoveryimage"
           when: on_fail
       - persist_to_workspace:
           root: ~/
