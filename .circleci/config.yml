@@ -19,7 +19,10 @@ jobs:
       - checkout
       - run:
           name: "Install bc"
-          command: "sudo apt update -qqy && sudo apt -qqy install bc"
+          command: "sudo apt update -qqy &>/dev/null && sudo apt -qqy install bc &>/dev/null"
+      - run:
+          name: "Set Git environment"
+          command: "git config --global user.email \"i.misterok21@gmail.com\" && git config --global user.name \"OneGameKoTT\""
       - run:
           name: "Clean env"
           command: "wget -O ~/cl.sh https://raw.githubusercontent.com/rokibhasansagar/slimhub_actions/main/cleanup.sh && bash ~/cl.sh"
