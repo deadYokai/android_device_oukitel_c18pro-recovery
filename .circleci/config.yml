@@ -18,6 +18,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Install bc"
+          command: "sudo apt update -qqy && sudo apt -qqy install bc"
+      - run:
           name: "Clean env"
           command: "wget -O ~/cl.sh https://raw.githubusercontent.com/rokibhasansagar/slimhub_actions/main/cleanup.sh && bash ~/cl.sh"
       - run:
