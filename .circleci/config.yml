@@ -8,13 +8,13 @@ jobs:
   build:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
-    machine:
-      image: ubuntu-2004:202111-01
+    docker:
+      - image: cimg/base:2021.11-20.04
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
-    environment:
-        TEST_BUILD: "true"
-        MANIFEST: https://github.com/PitchBlackRecoveryProject/manifest_pb -b android-10.0
+        environment:
+          TEST_BUILD: "true"
+          MANIFEST: https://github.com/PitchBlackRecoveryProject/manifest_pb -b android-10.0
     steps:
       - checkout
       - run:
