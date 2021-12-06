@@ -30,6 +30,14 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
+       - name: Clean Up 002
+         uses: easimon/maximize-build-space@master
+         with:
+           remove-dotnet: 'true'
+           remove-haskell: 'true'
+           root-reserve-mb: 512
+           swap-size-mb: 1024
+         
        - name: Cleaning Up Runner
          uses: rokibhasansagar/slimhub_actions@main
 
@@ -44,7 +52,7 @@ jobs:
               if [[ ${BUILD_RELEASE_TYPE} == "OFFICIAL" ]]; then echo "PB_OFFICIAL=true"  >> $GITHUB_ENV;fi
 
        - name: Recovery Compilation
-         uses: ElytrA8/Recovery-Compiler@production
+         uses: OneGameKoTT/Recovery-Compiler@production
        
        - name: Upload recovery.img 
          uses: actions/upload-artifact@v2.2.4
