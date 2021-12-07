@@ -1,4 +1,6 @@
 
+[![PBRP C18Pro](https://github.com/OneGameKoTT/android_device_oukitel_c18pro-pbrp/actions/workflows/pbrp-ci.yml/badge.svg?branch=android-10.0)](https://github.com/OneGameKoTT/android_device_oukitel_c18pro-pbrp/actions/workflows/pbrp-ci.yml)
+
 Basic | Spec Sheet
 -------:|:-------------------------
 SoC | MediaTek MT6757CD Helio P25
@@ -26,9 +28,9 @@ repo sync -j$(nproc --all) --force-sync
 
 ## Then to build
 ```bash
-     cd <source-dir>
-     . build/envsetup.sh
-     lunch omni_C18Pro-userdebug && mka recoveryimage
+cd <source-dir>
+. build/envsetup.sh
+lunch omni_C18Pro-userdebug && mka recoveryimage
 ```
 
 ## To test it
