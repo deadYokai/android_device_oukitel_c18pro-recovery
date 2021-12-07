@@ -40,10 +40,9 @@ jobs:
            remove-haskell: 'true'
            root-reserve-mb: 512
            swap-size-mb: 1024
-           #build-mount-path: /
-       - name: Install bc
-         run: "sudo apt update -qqy &>/dev/null && sudo apt -qqy install bc &>/dev/null"
-       - name: Cleaning Up Runner 02
+           build-mount-path: /
+           
+       - name: Cleaning Up Runner002
          uses: rokibhasansagar/slimhub_actions@main
          
        - name: Auto Adapt Manifest
