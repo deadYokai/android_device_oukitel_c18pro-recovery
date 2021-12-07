@@ -19,16 +19,16 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 
 
-TW_EXCLUDE_SUPERSU := false                    
-TW_INCLUDE_CRYPTO := true                   
-TW_INPUT_BLACKLIST := "hbtp_vm"              
-TW_SCREEN_BLANK_ON_BOOT := true
-TW_THEME := portrait_hdpi    
-TW_USE_TOOLBOX := true
 DEVICE_RESOLUTION := 720x1600          
 TARGET_SCREEN_HEIGHT := 1600                 
 TARGET_SCREEN_WIDTH := 720                     
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
+TW_EXCLUDE_SUPERSU := false                    
+TW_INCLUDE_CRYPTO := true                   
+TW_INPUT_BLACKLIST := "hbtp_vm"              
+TW_SCREEN_BLANK_ON_BOOT := true
+TW_THEME := portrait_hdpi
+TW_USE_TOOLBOX := true
 
 
 TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
@@ -73,7 +73,7 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 
 #33554432
 
-BOARD_KERNEL_IMAGE_NAME = Image.gz-dtb
+BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
