@@ -12,7 +12,7 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
     
-# PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/oukitel/c18pro/root,recovery/root)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/oukitel/c18pro/recovery/root,recovery/root)
 #PRODUCT_COPY_FILES += $(LOCAL_PATH)/root/init.recovery.mt6757.rc:root/init.recovery.mt6757.rc
 #PRODUCT_COPY_FILES += $(LOCAL_PATH)/root/sbin/permissive.sh:root/sbin/permissive.sh
 
