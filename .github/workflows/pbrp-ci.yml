@@ -40,7 +40,7 @@ jobs:
            remove-haskell: 'true'
            root-reserve-mb: 512
            swap-size-mb: 1024
-           build-mount-path: /
+           build-mount-path: /home/runner
            
        - name: Cleaning Up Runner002
          uses: rokibhasansagar/slimhub_actions@main
