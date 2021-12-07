@@ -31,11 +31,11 @@ git clone https://github.com/OneGameKoTT/android_device_oukitel_c18pro-pbrp --de
 ```bash
 cd <source-dir>
 . build/envsetup.sh
-lunch omni_C18Pro-userdebug && mka recoveryimage
+lunch omni_c18pro-userdebug && mka recoveryimage
 ```
 
 ## To test it
 ```
-fastboot flash recovery out/target/product/C18Pro/recovery.img
+fastboot flash recovery out/target/product/c18pro/recovery.img
 ```
 
