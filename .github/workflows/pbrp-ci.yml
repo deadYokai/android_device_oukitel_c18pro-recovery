@@ -33,17 +33,7 @@ jobs:
        - name: Cleaning Up Runner
          uses: rokibhasansagar/slimhub_actions@main
          
-       - name: Clean Up 002
-         uses: easimon/maximize-build-space@master
-         with:
-           remove-dotnet: 'true'
-           remove-haskell: 'true'
-           root-reserve-mb: 512
-           swap-size-mb: 1024
-           build-mount-path: /home/runner
-           
-       - name: Cleaning Up Runner002
-         uses: rokibhasansagar/slimhub_actions@main
+     
          
        - name: Auto Adapt Manifest
          # /* if your branch name is other than the one which you dispatched workflow from then set it manually in the place of ${GITHUB_REF##*/}" */ 
