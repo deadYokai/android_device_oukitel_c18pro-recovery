@@ -24,19 +24,19 @@ jobs:
       - run:
           name: "Set Git environment"
           command: "git config --global user.email \"i.misterok21@gmail.com\" && git config --global user.name \"OneGameKoTT\" && git config --global color.ui auto"
-      - run:
-          name: "Clean env"
-          command: "wget -O ~/cl.sh https://raw.githubusercontent.com/rokibhasansagar/slimhub_actions/main/cleanup.sh && bash ~/cl.sh"
+      # - run:
+      #     name: "Clean env"
+      #     command: "wget -O ~/cl.sh https://raw.githubusercontent.com/rokibhasansagar/slimhub_actions/main/cleanup.sh && bash ~/cl.sh"
       - run:
           name: "Init build"
           command: "wget -O ~/build.sh https://raw.githubusercontent.com/OneGameKoTT/Recovery-Compiler/beta/build.sh && bash ~/build.sh"
       - run:
           name: "OnFail01"
-          command: "echo fail"
+          command: "echo Fuck fuck fuck"
           when: on_fail
       - persist_to_workspace:
           root: ~/
-          paths: [builder/out/target/product/c18pro/recovery.img]
+          paths: [builder/out/target/product/c18pro/recovery.img, builder/out/target/product/c18pro/PBRP-c18pro-*.zip]
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
