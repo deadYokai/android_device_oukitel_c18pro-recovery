@@ -24,6 +24,7 @@ To initialize your local repository using the minimal-manifest-twrp omni trees t
 ```bash
 repo init --depth=1 -u https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0
 repo sync -j$(nproc --all) --force-sync
+git clone https://github.com/OneGameKoTT/android_device_oukitel_c18pro-pbrp --depth=1 device/oukitel/c18pro
 ```
 
 ## Then to build
