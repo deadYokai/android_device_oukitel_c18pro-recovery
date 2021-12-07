@@ -58,5 +58,5 @@ jobs:
          uses: actions/upload-artifact@v2.2.4
          with:
            name: Zip for twrp
-           path: ~/builder/out/target/product/c18pro/PBRP-c18pro-.*\.zip
+           path: ~/builder/out/target/product/c18pro/PBRP-c18pro-*.zip
                   
