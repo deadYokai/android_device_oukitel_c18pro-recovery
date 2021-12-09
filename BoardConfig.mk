@@ -59,7 +59,7 @@ INSTALLED_DTBIMAGE_TARGET := device/oukitel/c18pro/prebuilt/dtb.dtb
 #BOARD_MKBOOTIMG_ARGS += --dtb $(INSTALLED_DTBIMAGE_TARGET)
 #BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_PREBUILT_RECOVERY_DTBOIMAGE := device/oukitel/c18pro/prebuilt/dtbo.img
+BOARD_PREBUILT_RECOVERY_DTBOIMAGE := device/oukitel/c18pro/prebuilt/dtbo-verified.img
 
 TARGET_USES_MKE2FS := true
 USE_OPENGL_RENDERER := true
