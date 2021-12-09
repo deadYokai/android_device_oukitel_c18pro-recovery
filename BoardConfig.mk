@@ -91,5 +91,12 @@ TARGET_USES_LOGD := true
 
 PB_DISABLE_DEFAULT_DM_VERITY := true
 
+SHRP_DEVICE_CODE := c18pro
+SHRP_PATH := device/oukitel/$(SHRP_DEVICE_CODE)
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A-Only
+SHRP_MAINTAINER := MyNameIsKitsune
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_DARK := true
 
 
