@@ -6,6 +6,10 @@ on:
         description: 'Deploy Type (TEST/BETA/OFFICIAL)'
         required: true
         default: 'TEST'
+      FLAVOR:
+        description: 'FLAVOR'
+        required: true
+        default: 'userdebug'
       ChangeLogs:
         description: 'Build ChangeLogs'
         required: true
