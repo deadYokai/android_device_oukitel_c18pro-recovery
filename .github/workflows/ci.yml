@@ -1,4 +1,4 @@
-name: PBRP C18Pro
+name: SHRP C18Pro
 on:
   workflow_dispatch:
     inputs:
@@ -53,10 +53,4 @@ jobs:
          with:
            name: recovery.img
            path: ~/builder/out/target/product/c18pro/recovery.img
-           
-       - name: Upload PBRP.zip
-         uses: actions/upload-artifact@v2.2.4
-         with:
-           name: Zip for twrp
-           path: ~/builder/out/target/product/c18pro/PBRP-c18pro-*.zip
                   
