@@ -1,4 +1,4 @@
-LOCAL_PATH := device/OUKITEL/C18_Pro
+LOCAL_PATH := device/oukitel/c18pro
 
 BOARD_HAS_MTK_HARDWARE := true
 MTK_HARDWARE := true
