@@ -22,14 +22,6 @@ TARGET_NO_BOOTLOADER := true
 
 TARGET_PREBUILT_KERNEL := device/oukitel/c18pro/prebuilt/Image.gz
 TARGET_RECOVERY_FSTAB := device/oukitel/c18pro/recovery.fstab
-BOARD_KERNEL_BASE = 0x
-BOARD_KERNEL_OFFSET = 0x
-BOARD_RAMDISK_OFFSET = 0x
-BOARD_TAGS_OFFSET = 0x
-BOARD_KERNEL_PAGESIZE := 
-BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_TAGS_OFFSET)
-BOARD_KERNEL_CMDLINE = 
-
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216
@@ -57,8 +49,6 @@ TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 
 SHRP_DEVICE_CODE := c18pro
 SHRP_PATH := device/oukitel/$(SHRP_DEVICE_CODE)
-SHRP_REC_TYPE := Treble
-SHRP_DEVICE_TYPE := A-Only
 SHRP_MAINTAINER := MyNameIsKitsune
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
 SHRP_DARK := true
