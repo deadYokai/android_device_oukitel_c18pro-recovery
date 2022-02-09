@@ -1,3 +1,5 @@
+TARGET_PLATFORM_VERSION := QP1A
+
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_c18pro.mk
