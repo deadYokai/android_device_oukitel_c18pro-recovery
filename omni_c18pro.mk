@@ -8,7 +8,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 #$(call inherit-product, vendor/pb/config/common.mk)
 PRODUCT_DEVICE := c18pro
 PRODUCT_NAME := omni_c18pro
-PRODUCT_BRAND := OUKITEL
+PRODUCT_BRAND := oukitel
 PRODUCT_MODEL := C18_Pro
 PRODUCT_MANUFACTURER := OUKITEL
 PRODUCT_BOARD := mt6757
