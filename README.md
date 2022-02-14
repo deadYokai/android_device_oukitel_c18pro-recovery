@@ -1,5 +1,5 @@
 
-[![Compiling status](https://github.com/OneGameKoTT/android_device_oukitel_c18pro-pbrp/actions/workflows/pbrp-ci.yml/badge.svg?branch=android-10.0)](https://github.com/OneGameKoTT/android_device_oukitel_c18pro-pbrp/actions/workflows/ci.yml)
+[![Compiling status](https://github.com/OneGameKoTT/android_device_oukitel_c18pro-pbrp/actions/workflows/ci.yml/badge.svg?branch=android-10.0)](https://github.com/OneGameKoTT/android_device_oukitel_c18pro-pbrp/actions/workflows/ci.yml)
 
 Basic | Spec Sheet
 -------:|:-------------------------
