@@ -16,10 +16,10 @@ Shipped Android Version | Stock Android 10.0
 ## Sync and Build manually
 ---------------
 
-To get started with building PitchBlack Recovery, you'll need to get
+To get started with building Recovery, you'll need to get
 familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
-To initialize your local repository using the minimal-manifest-twrp omni trees to build PitchBlack Recovery, use a command like this:
+To initialize your local repository to build Recovery, use a command like this:
 
 ```bash
 repo init --depth=1 -u https://github.com/SHRP/manifest.git -b v3_10.0
