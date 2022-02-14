@@ -1,5 +1,5 @@
 
-[![PBRP C18Pro](https://github.com/OneGameKoTT/android_device_oukitel_c18pro-pbrp/actions/workflows/pbrp-ci.yml/badge.svg?branch=android-10.0)](https://github.com/OneGameKoTT/android_device_oukitel_c18pro-pbrp/actions/workflows/pbrp-ci.yml)
+[![Compiling status](https://github.com/OneGameKoTT/android_device_oukitel_c18pro-pbrp/actions/workflows/pbrp-ci.yml/badge.svg?branch=android-10.0)](https://github.com/OneGameKoTT/android_device_oukitel_c18pro-pbrp/actions/workflows/ci.yml)
 
 Basic | Spec Sheet
 -------:|:-------------------------
@@ -22,9 +22,9 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 To initialize your local repository using the minimal-manifest-twrp omni trees to build PitchBlack Recovery, use a command like this:
 
 ```bash
-repo init --depth=1 -u https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0
+repo init --depth=1 -u https://github.com/SHRP/manifest.git -b v3_10.0
 repo sync -j$(nproc --all) --force-sync
-git clone https://github.com/OneGameKoTT/android_device_oukitel_c18pro-pbrp --depth=1 device/oukitel/c18pro
+git clone https://github.com/OneGameKoTT/android_device_oukitel_c18pro-recovery --depth=1 device/oukitel/c18pro
 ```
 
 ## Then to build
