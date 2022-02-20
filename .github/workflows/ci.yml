@@ -2,22 +2,12 @@ name: SHRP C18Pro
 on:
   workflow_dispatch:
     inputs:
-      DEPLOY_TYPE:
-        description: 'Deploy Type (TEST/BETA/OFFICIAL)'
-        required: true
-        default: 'TEST'
       FLAVOR:
         description: 'FLAVOR'
         required: true
-        default: 'userdebug'
-      ChangeLogs:
-        description: 'Build ChangeLogs'
-        required: true
-        default: 'Sync Latest Source'
+        default: 'eng'
 
 env:
-  BUILD_RELEASE_TYPE: ${{ github.event.inputs.DEPLOY_TYPE }}
-  CHANGELOG: ${{ github.event.inputs.ChangeLogs }}
   BOT_API: ${{ secrets.BOT_API }}
   GCF_AUTH_KEY: ${{ secrets.GCF_AUTH_KEY }}
   GH_BOT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -34,27 +24,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-       - name: Cleaning Up Runner
+       - name: Cleaning Up Runner (Slimhub)
          uses: rokibhasansagar/slimhub_actions@main
-         
-     
-         
+       
        - name: Auto Adapt Manifest
          # /* if your branch name is other than the one which you dispatched workflow from then set it manually in the place of ${GITHUB_REF##*/}" */ 
          run: echo "MANIFEST=git://github.com/SHRP/manifest.git -b v3_10.0" >> $GITHUB_ENV
 
-       - name: Export Vars
-         run: |
-              if [[ ${BUILD_RELEASE_TYPE} == "TEST" ]]; then echo "TEST_BUILD=true"  >> $GITHUB_ENV;fi
-              if [[ ${BUILD_RELEASE_TYPE} == "BETA" ]]; then echo "BETA_BUILD=true"  >> $GITHUB_ENV;fi
-              if [[ ${BUILD_RELEASE_TYPE} == "OFFICIAL" ]]; then echo "PB_OFFICIAL=true"  >> $GITHUB_ENV;fi
-
-       - name: Recovery Compilation
+       - name: Compilation
          uses: OneGameKoTT/Recovery-Compiler@production
        
-       - name: Upload recovery.img 
+       - name: Upload 
          uses: actions/upload-artifact@v2.2.4
          with:
-           name: recovery.img
-           path: ~/builder/out/target/product/c18pro/recovery.img
+           name: dump files
+           path: ~/builder/out/target/product/c18pro/*{.img,.zip}
                   
