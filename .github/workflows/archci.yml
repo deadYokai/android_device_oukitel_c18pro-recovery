@@ -20,20 +20,14 @@ jobs:
   Recovery_compiling:
     if: "(! contains(toJSON(github.event.commits.*.message), '[skip-ci]'))"
     runs-on: ubuntu-latest
-    container: archlinux:base-devel
 
     steps:
-#       - name: Cleaning Up Runner (Slimhub)
-#        uses: rokibhasansagar/slimhub_actions@main
+       - name: Cleaning Up Runner (Slimhub)
+         uses: rokibhasansagar/slimhub_actions@main
 
        - name: Preconfigure
          # /* if your branch name is other than the one which you dispatched workflow from then set it manually in the place of ${GITHUB_REF##*/}" */
-         run: |
-          sudo pacman --noconfirm -Syy
-          sudo pacman --noconfirm -Scc
-          useradd user -G wheel && echo "user ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-          chown user -R .
-          echo "MANIFEST=https://github.com/SHRP/manifest.git -b v3_10.0" >> $GITHUB_ENV
+         run: echo "MANIFEST=https://github.com/SHRP/manifest.git -b v3_10.0" >> $GITHUB_ENV
  
        - name: Build
          uses: OneGameKoTT/Recovery-Compiler@arch-based
