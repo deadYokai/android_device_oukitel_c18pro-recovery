@@ -22,15 +22,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-       - name: Cleaning Up Runner (Slimhub)
-         uses: rokibhasansagar/slimhub_actions@main
+#       - name: Cleaning Up Runner (Slimhub)
+#        uses: rokibhasansagar/slimhub_actions@main
 
        - name: Auto Adapt Manifest
          # /* if your branch name is other than the one which you dispatched workflow from then set it manually in the place of ${GITHUB_REF##*/}" */
          run: echo "MANIFEST=https://github.com/SHRP/manifest.git -b v3_10.0" >> $GITHUB_ENV
          
        - name: Install Archlinux
-         run: curl -L https://github.com/sickcodes/github-actions-archlinux/raw/master/install.sh | sh
+         run: curl -L https://github.com/OneGameKoTT/github-actions-archlinux/raw/master/install.sh | sh
          
        - name: Compilation
          uses: OneGameKoTT/Recovery-Compiler@arch-based
