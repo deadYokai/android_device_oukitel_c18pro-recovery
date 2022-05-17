@@ -27,7 +27,7 @@ jobs:
 
        - name: Auto Adapt Manifest
          # /* if your branch name is other than the one which you dispatched workflow from then set it manually in the place of ${GITHUB_REF##*/}" */
-         run: echo "MANIFEST=git://github.com/SHRP/manifest.git -b v3_10.0" >> $GITHUB_ENV
+         run: echo "MANIFEST=https://github.com/SHRP/manifest.git -b v3_10.0" >> $GITHUB_ENV
 
        - name: Compilation
          uses: OneGameKoTT/Recovery-Compiler@production
