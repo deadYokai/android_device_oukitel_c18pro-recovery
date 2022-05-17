@@ -29,6 +29,7 @@ jobs:
        - name: Preconfigure
          # /* if your branch name is other than the one which you dispatched workflow from then set it manually in the place of ${GITHUB_REF##*/}" */
          run: |
+          sudo pacman --noconfirm -Syy
           sudo pacman --noconfirm -Scc
           sudo pacman --noconfirm -Rs $(pacman -Qtdq)
           useradd user -G wheel && echo "user ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
