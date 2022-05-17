@@ -31,7 +31,6 @@ jobs:
          run: |
           sudo pacman --noconfirm -Syy
           sudo pacman --noconfirm -Scc
-          sudo pacman --noconfirm -Rs $(pacman -Qtdq)
           useradd user -G wheel && echo "user ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
           chown user -R .
           echo "MANIFEST=https://github.com/SHRP/manifest.git -b v3_10.0" >> $GITHUB_ENV
