@@ -15,8 +15,6 @@ env:
   GitHubName: ${{ secrets.GitHubName }}
   SFPassword: ${{ secrets.SFPassword }}
   SFUserName: ${{ secrets.SFUserName }}
-  #TARGET: "define this if your target is not recoveryimage"
-  #EXTRA_CMD: "Extra Commands Here"
 
 jobs:
   Recovery_compiling:
@@ -26,17 +24,16 @@ jobs:
     steps:
        - name: Cleaning Up Runner (Slimhub)
          uses: rokibhasansagar/slimhub_actions@main
-       
+
        - name: Auto Adapt Manifest
-         # /* if your branch name is other than the one which you dispatched workflow from then set it manually in the place of ${GITHUB_REF##*/}" */ 
+         # /* if your branch name is other than the one which you dispatched workflow from then set it manually in the place of ${GITHUB_REF##*/}" */
          run: echo "MANIFEST=git://github.com/SHRP/manifest.git -b v3_10.0" >> $GITHUB_ENV
 
        - name: Compilation
          uses: OneGameKoTT/Recovery-Compiler@production
-       
-       - name: Upload 
+
+       - name: Upload
          uses: actions/upload-artifact@v2.2.4
          with:
            name: dump files
            path: ~/builder/out/target/product/c18pro/*{.img,.zip}
-                  
