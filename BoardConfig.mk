@@ -43,3 +43,6 @@ SHRP_PATH := device/oukitel/$(SHRP_DEVICE_CODE)
 SHRP_MAINTAINER := MyNameIsKitsune
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
 SHRP_DARK := true
+SHRP_EXTERNAL := /external_sd
+SHRP_EXPRESS := true
+
