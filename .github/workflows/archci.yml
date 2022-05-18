@@ -32,7 +32,10 @@ jobs:
           curl -L https://raw.githubusercontent.com/OneGameKoTT/github-actions-archlinux/master/install.sh | sh
          
        - name: Build
-         uses: OneGameKoTT/Recovery-Compiler@arch-based
+         run: |
+          sudo pacman --noconfirm -Syu docker
+          sudo systemctl start docker
+          curl -L https://raw.githubusercontent.com/OneGameKoTT/Recovery-Compiler/arch-based/build.sh | sh
 
        - name: Upload Artifacts
          uses: actions/upload-artifact@v2.2.4
