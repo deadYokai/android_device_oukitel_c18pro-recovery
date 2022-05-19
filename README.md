@@ -6,7 +6,7 @@ Basic | Spec Sheet
 SoC | MediaTek MT6757CD Helio P25
 CPU | 64-bit, 2.5 GHz Octa-core, Cortex-A53
 GPU | ARM Mali T-880 MP2
-Shipped Android Version | Stock Android 10.0
+Shipped Android Version | AOSP 10.0
 
 ## Device picture
 
@@ -22,8 +22,8 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 To initialize your local repository to build Recovery, use a command like this:
 
 ```bash
-repo init --depth=1 -u https://github.com/SHRP/manifest.git -b v3_10.0
-repo sync -j$(nproc --all) --force-sync
+repo init -u https://github.com/SHRP/manifest.git -b v3_10.0
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 git clone https://github.com/OneGameKoTT/android_device_oukitel_c18pro-recovery --depth=1 device/oukitel/c18pro
 ```
 
@@ -31,7 +31,7 @@ git clone https://github.com/OneGameKoTT/android_device_oukitel_c18pro-recovery 
 ```bash
 cd <source-dir>
 . build/envsetup.sh
-lunch omni_c18pro-userdebug && mka recoveryimage
+lunch omni_c18pro-eng && mka recoveryimage
 ```
 
 ## To test it
