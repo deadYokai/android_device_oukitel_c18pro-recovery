@@ -33,7 +33,9 @@ jobs:
          uses: OneGameKoTT/Recovery-Compiler@production
 
        - name: Upload
-         uses: actions/upload-artifact@v2.2.4
+         uses: actions/upload-artifact@v3.0.0
          with:
            name: dump files
-           path: ~/builder/out/target/product/c18pro/*{.img,.zip}
+           path: |
+            /home/runner/builder/out/target/product/c18pro/*.zip
+            /home/runner/builder/out/target/product/c18pro/*.img
