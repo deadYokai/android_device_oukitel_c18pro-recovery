@@ -28,6 +28,10 @@ TARGET_SCREEN_WIDTH := 720
 
 TW_EXCLUDE_SUPERSU := true
 
+ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
+ADDITIONAL_DEFAULT_PROPERTIES += ro.allow.mock.location=1
+ADDITIONAL_DEFAULT_PROPERTIES += persist.sys.usb.config=mass_storage
+
 TARGET_PREBUILT_KERNEL := device/oukitel/c18pro/prebuilt/Image.gz
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_BASE := 0x40078000
@@ -64,9 +68,12 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun%d/file
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.0/file
 
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+#TW_MTP_DEVICE := /dev/mtp_usb
+TW_NO_LEGACY_PROPS := true
+TW_USE_NEW_MINADBD := true
 
 SHRP_DEVICE_CODE := c18pro
 SHRP_PATH := device/oukitel/$(SHRP_DEVICE_CODE)
