@@ -28,10 +28,10 @@ TARGET_SCREEN_WIDTH := 720
 
 TW_EXCLUDE_SUPERSU := true
 
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.adb.secure=0
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.secure=0
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.allow.mock.location=1
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.usb.config=mass_storage,adb
+#PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.adb.secure=0
+#PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.secure=0
+#PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.allow.mock.location=1
+#PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.usb.config=mass_storage,adb
 
 TARGET_PREBUILT_KERNEL := device/oukitel/c18pro/prebuilt/Image.gz
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
