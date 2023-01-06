@@ -30,7 +30,7 @@ jobs:
          run: echo "MANIFEST=https://github.com/SHRP/manifest.git -b v3_10.0" >> $GITHUB_ENV
 
        - name: Compilation
-         uses: OneGameKoTT/Recovery-Compiler@production
+         uses: deadYokai/Recovery-Compiler@production
 
        - name: Upload
          uses: actions/upload-artifact@v3.0.0
