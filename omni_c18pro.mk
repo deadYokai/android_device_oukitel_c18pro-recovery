@@ -4,7 +4,13 @@ LOCAL_PATH := device/oukitel/c18pro
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, vendor/omni/config/common.mk)
+
+#Check if PitchBlack manifest
+ifneq ("$(wildcard vendor/pb/config/common.mk)","")
+    $(call inherit-product, vendor/pb/config/common.mk)
+else  
+    $(call inherit-product, vendor/omni/config/common.mk)
+endif
 
 PRODUCT_DEVICE := c18pro
 PRODUCT_NAME := omni_c18pro
