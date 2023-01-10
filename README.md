@@ -5,6 +5,8 @@
 
 [![TWRP](https://github.com/deadYokai/android_device_oukitel_c18pro-recovery/actions/workflows/twrp-build.yml/badge.svg?branch=android-10.0)](https://github.com/deadYokai/android_device_oukitel_c18pro-recovery/actions/workflows/twrp-build.yml)
 
+[![OrangeFox](https://github.com/deadYokai/android_device_oukitel_c18pro-recovery/actions/workflows/orangefox-build.yml/badge.svg?branch=android-10.0)](https://github.com/deadYokai/android_device_oukitel_c18pro-recovery/actions/workflows/orangefox-build.yml)
+
 Basic | Spec Sheet
 -------:|:-------------------------
 SoC | MediaTek MT6757CD Helio P25
@@ -14,7 +16,7 @@ Shipped Android Version | AOSP 10.0
 
 ## Device picture
 
-![Oukitel C18 Pro](https://www.oukitelmobile.com/wp-content/uploads/2020/06/oukitel-c18-pro-rugged-smartphone-23.jpg "Oukitel C18 Pro")
+![Oukitel C18 Pro](https://manual-user-guide.com/images/phones/oukitel_c18_pro.png "Oukitel C18 Pro")
 
 
 ## Sync and Build manually

@@ -1,0 +1,37 @@
+name: OrangeFox C18Pro
+on:
+  workflow_dispatch:
+    inputs:
+      FLAVOR:
+        description: 'FLAVOR'
+        required: true
+        default: 'eng'
+
+env:
+  BOT_API: ${{ secrets.BOT_API }}
+  GCF_AUTH_KEY: ${{ secrets.GCF_AUTH_KEY }}
+  GH_BOT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GitHubMail: ${{ secrets.GitHubMail }}
+  GitHubName: ${{ secrets.GitHubName }}
+  SFPassword: ${{ secrets.SFPassword }}
+  SFUserName: ${{ secrets.SFUserName }}
+
+jobs:
+  Recovery_compiling:
+    if: "(! contains(toJSON(github.event.commits.*.message), '[skip-ci]'))"
+    runs-on: ubuntu-latest
+
+    steps:
+       - name: Cleaning Up Runner (Slimhub)
+         uses: rokibhasansagar/slimhub_actions@main
+
+       - name: Compilation
+         uses: deadYokai/Recovery-Compiler@orangefox10
+
+       - name: Upload
+         uses: actions/upload-artifact@v3.0.0
+         with:
+           name: dump files
+           path: |
+            /home/runner/builder/out/target/product/c18pro/*.zip
+            /home/runner/builder/out/target/product/c18pro/*.img
