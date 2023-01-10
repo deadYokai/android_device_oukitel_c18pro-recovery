@@ -24,7 +24,21 @@ jobs:
     steps:
        - name: Cleaning Up Runner (Slimhub)
          uses: rokibhasansagar/slimhub_actions@main
-
+       
+       - name: Export env
+         run: |
+               export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
+               export FOX_REPLACE_BUSYBOX_PS=1
+               export FOX_USE_NANO_EDITOR=1
+               export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
+               export OF_FORCE_DISABLE_DM_VERITY_FORCED_ENCRYPTION=1
+               export OF_SKIP_FBE_DECRYPTION=1
+               export OF_MAINTAINER=MyNameIsKitsune
+               export OF_MAINTAINER_AVATAR=/home/runner/fox_10.0/device/oukitel/c18pro/avatar.png
+               export OF_USE_LATEST_MAGISK=1
+               export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
+               export OF_FORCE_PREBUILT_KERNEL=1
+       
        - name: Compilation
          uses: deadYokai/Recovery-Compiler@orangefox10
 
