@@ -33,5 +33,5 @@ jobs:
          with:
            name: dump files
            path: |
-            /home/runner/builder/out/target/product/c18pro/*.zip
-            /home/runner/builder/out/target/product/c18pro/*.img
+            /home/runner/fox_10.0/BUILDS/c18pro/*.zip
+            /home/runner/fox_10.0/BUILDS/c18pro/*.img
