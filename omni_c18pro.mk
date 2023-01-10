@@ -21,7 +21,6 @@ PRODUCT_MANUFACTURER := OUKITEL
 PRODUCT_GMS_CLIENTID_BASE := android-hct
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="full_k57pv1_dm_64-user 10 QP1A.190711.020 mp1V9176 release-keys" \
-    persist.sys.usb.config=mass_storage,adb
+    PRIVATE_BUILD_DESC="full_k57pv1_dm_64-user 10 QP1A.190711.020 mp1V9176 release-keys"
 
 BUILD_FINGERPRINT := OUKITEL/C18_Pro_EEA/C18_Pro:10/QP1A.190711.020/1605752701:user/release-keys
