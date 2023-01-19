@@ -1,1 +1,8 @@
-[] 
+[
+  {
+    "remote": "github",
+    "repository": "deadYokai/proprietary_vendor_c18pro",
+    "target_path": "vendor/oukitel/c18pro",
+    "revision": "android-10"
+  }
+]
