@@ -69,7 +69,7 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_INCLUDE_CRYPTO := true
 
-TARGET_RECOVERY_FSTAB = $(DEVICE_PATH)/recovery.fstab
+TARGET_RECOVERY_FSTAB = $(DEVICE_PATH)/recovery.fstab.bak
 
 TW_NO_LEGACY_PROPS := true
 TW_USE_NEW_MINADBD := true
