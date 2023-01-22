@@ -9,7 +9,7 @@ on:
       VENDOR:
         description: 'Vendor'
         required: false
-        default: ''
+        default: 'https://github.com/deadYokai/proprietary_vendor_c18pro'
 
 env:
   BOT_API: ${{ secrets.BOT_API }}
