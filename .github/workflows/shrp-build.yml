@@ -6,8 +6,8 @@ on:
         description: 'FLAVOR'
         required: true
         default: 'eng'
-      VENDOR:
-        description: 'Vendor'
+      VENDOR_REPO:
+        description: 'Link to vendor repo'
         required: false
         default: 'https://github.com/deadYokai/proprietary_vendor_c18pro'
 
