@@ -6,6 +6,10 @@ on:
         description: 'FLAVOR'
         required: true
         default: 'eng'
+      VENDOR:
+        description: 'Vendor'
+        required: false
+        default: ''
 
 env:
   BOT_API: ${{ secrets.BOT_API }}
