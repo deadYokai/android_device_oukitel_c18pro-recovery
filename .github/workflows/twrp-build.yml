@@ -2,10 +2,6 @@ name: TWRP C18Pro
 on:
   workflow_dispatch:
     inputs:
-      FLAVOR:
-        description: 'FLAVOR'
-        required: true
-        default: 'eng'
       VENDOR_REPO:
         description: 'Link to vendor repo'
         required: false
@@ -19,6 +15,7 @@ env:
   GitHubName: ${{ secrets.GitHubName }}
   SFPassword: ${{ secrets.SFPassword }}
   SFUserName: ${{ secrets.SFUserName }}
+  VENDOR_REPO: ${{ inputs.VENDOR_REPO }}
 
 jobs:
   Recovery_compiling:
