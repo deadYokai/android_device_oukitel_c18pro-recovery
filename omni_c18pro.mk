@@ -12,6 +12,8 @@ else
     $(call inherit-product, vendor/omni/config/common.mk)
 endif
 
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
+
 PRODUCT_DEVICE := c18pro
 PRODUCT_NAME := omni_c18pro
 PRODUCT_BRAND := oukitel
