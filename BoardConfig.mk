@@ -89,7 +89,7 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 BOARD_USES_USB_CONFIGFS := true
 BOARD_ENABLE_ADB_IN_RECOVERY := true
 
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
+BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
@@ -104,6 +104,7 @@ TW_INCLUDE_CRYPTO := true
 TW_NO_LEGACY_PROPS := true
 TW_USE_NEW_MINADBD := true
 TWRP_INCLUDE_LOGCAT := true
+TW_MTP_DEVICE := "/dev/mtp_usb"
 
 # PB
 PB_DISABLE_DEFAULT_DM_VERITY := true
