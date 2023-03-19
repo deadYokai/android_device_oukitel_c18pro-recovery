@@ -108,4 +108,4 @@ TW_MTP_DEVICE := "/dev/mtp_usb"
 PB_DISABLE_DEFAULT_DM_VERITY := true
 
 # Inherit the proprietary files
-include vendor/oukitel/c18pro/BoardConfigVendor.mk
+-include vendor/oukitel/c18pro/BoardConfigVendor.mk
