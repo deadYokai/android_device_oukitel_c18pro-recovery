@@ -12,8 +12,6 @@ PRODUCT_CHARACTERISTICS := default
 
 # Rootdir
 PRODUCT_PACKAGES += \
-
-PRODUCT_PACKAGES += \
     fstab.mt6757 \
     multi_init.rc \
     factory_init.project.rc \
