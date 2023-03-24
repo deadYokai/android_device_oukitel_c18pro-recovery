@@ -92,6 +92,9 @@ BOARD_ENABLE_ADB_IN_RECOVERY := true
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Treble
+BOARD_VNDK_VERSION := current
+
 # TWRP
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
