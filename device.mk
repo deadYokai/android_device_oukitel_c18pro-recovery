@@ -37,11 +37,13 @@ PRODUCT_PACKAGES += \
     init.rc \
 
 # Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 28
+PRODUCT_SHIPPING_API_LEVEL := 29
+
+PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/oukitel/c18pro/c18pro-vendor.mk)
+# $(call inherit-product, vendor/oukitel/c18pro/c18pro-vendor.mk)
