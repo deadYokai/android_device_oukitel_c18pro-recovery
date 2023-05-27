@@ -44,4 +44,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit the proprietary files
-# $(call inherit-product, vendor/oukitel/c18pro/c18pro-vendor.mk)
+ifneq ("$(wildcard vendor/oukitel/c18pro/c18pro-vendor.mk)","")
+    $(call inherit-product, vendor/oukitel/c18pro/c18pro-vendor.mk)
+endif
