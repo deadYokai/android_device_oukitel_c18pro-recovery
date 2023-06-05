@@ -21,12 +21,7 @@ Shipped Android Version | AOSP 10.0
 
 ## Build Guides
 
-[![SkyHawk Recovery Project](https://shrp.github.io/_media/skyhawk.png)](https://shrp.github.io/#/guide?id=android-10)
----------------
-[<img src="https://2.bp.blogspot.com/-rZ2tx1T_EPw/WiIxrWRO5GI/AAAAAAAAA_8/457SNG2rwVgxKMM9tTQz_kyvTDuwSG6zACLcBGAs/s1600/twrp.png" alt="TeamWin Recovery Project" height="200"/>](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni#getting-started)
----------------
-[![PitchBlack Recovery Project](https://pitchblackrecovery.com/wp-content/uploads/2020/06/New_Logo-7-e1594187397350.png)](https://pitchblackrecovery.com/docs/how-to-compile/)
----------------
-[![OrangeFox Recovery Project](https://telegra.ph/file/81dcf4a1494f64fcbf715.jpg)](https://wiki.orangefox.tech/en/dev/building)
----------------
-
+[![SkyHawk Recovery Project](https://avatars.githubusercontent.com/u/66643114?s=64&v=4)](https://shrp.github.io/#/guide?id=android-10)
+[![TeamWin Recovery Project](https://avatars.githubusercontent.com/u/25637514?s=64&v=4)](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni#getting-started)
+[![PitchBlack Recovery Project](https://avatars.githubusercontent.com/u/37493898?s=64&v=4)](https://pitchblackrecovery.com/docs/how-to-compile/)
+[![OrangeFox Recovery Project](https://gitlab.com/uploads/-/system/group/avatar/2810739/256.png?width=64)](https://wiki.orangefox.tech/en/dev/building)
